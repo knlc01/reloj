@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.box{
+    height: 80vh;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(238, 236, 116);
+}
+
+footer{
+    background-color: rgb(221, 84, 59);
+    height: 20vh;
+    margin: 0px;
+    padding: 10px;
+}
+
+.a_notdecorated{
+    text-decoration: none;
+    color: black
+}
+.a_decorated, .a_decorated:visited{
+    text-decoration: none;
+    color: rgb(0, 0, 160);
+}
+.a_decorated:hover{
+    color: rgb(0, 0, 219);
+}
