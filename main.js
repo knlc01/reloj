@@ -1,12 +1,11 @@
 function generateTime() {
-    // Capturamos la hora actual mediante la creación de una nueva instancia del objeto Date
+    // Tomo la hora actual mediante la creación de una nueva instancia del objeto Date
     let timeNow = new Date();
     // Queremos que la hora se muestre siempre con 2 dígitos. Para eso, hacemos lo siguiente:
-    // Usamos un ternario para saber si el número de digitos es menor que 2
     let hours = timeNow.getHours().toString().length < 2 ? "0" + timeNow.getHours() : timeNow.getHours();
     let minutes = timeNow.getMinutes().toString().length < 2 ? "0" + timeNow.getMinutes() : timeNow.getMinutes();
     let seconds = timeNow.getSeconds().toString().length < 2 ? "0" + timeNow.getSeconds() : timeNow.getSeconds();
-
+    // De lo siguiente tomo mes dia y año, el mes me lo da del 0 al 11
     let timeNow2 = new Date();
 
     let array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
